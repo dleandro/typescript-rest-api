@@ -7,7 +7,7 @@ class Start implements Query<string> {
     this.startQuery = startQuery;
   }
   execute(data: string[]): string[] {
-    return [this.startQuery, ...data]
+    return [this.startQuery, ...data];
   }
 
   validate(): void {

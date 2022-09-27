@@ -20,9 +20,9 @@ const reverseWordUseCase = (query: any) => {
     currArray = end.execute(currArray);
   }
 
-  process.env.SIMPLE_ARRAY = JSON.stringify(currArray)
+  process.env.SIMPLE_ARRAY = JSON.stringify(currArray);
 
-  return {arr: JSON.parse(process.env.SIMPLE_ARRAY)};
+  return { arr: JSON.parse(process.env.SIMPLE_ARRAY) };
 };
 
 const setupStart = (query: any) => {

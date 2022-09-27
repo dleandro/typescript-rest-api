@@ -1,6 +1,6 @@
 interface Query<T> {
-    execute(data: T[]): T[],
-    validate(): void
+  execute(data: T[]): T[];
+  validate(): void;
 }
 
-export default Query
+export default Query;

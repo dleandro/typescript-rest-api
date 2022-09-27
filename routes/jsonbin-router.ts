@@ -8,7 +8,7 @@ const fetchJsonbin = async (req: Request, res: Response) => {
     const data = await jsonbinServiceUseCase(req.query);
     res.status(200).send(data);
   } catch (error: any) {
-    res.status(400).send({errMessage: error?.message});
+    res.status(400).send({ errMessage: error?.message });
   }
 };
 

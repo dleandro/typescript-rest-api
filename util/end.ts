@@ -7,8 +7,8 @@ class End implements Query<string> {
     this.endQuery = endQuery;
   }
   execute(data: string[]): string[] {
-    data.push(this.endQuery)
-    return data
+    data.push(this.endQuery);
+    return data;
   }
 
   validate(): void {

@@ -1,6 +1,6 @@
 import Query from './query';
 import { Country } from '../dtos/dtos';
-import { isString } from "./utilFunctions"
+import { isString } from './utilFunctions';
 
 class Filter implements Query<Country> {
   filterQuery: string;
@@ -9,7 +9,9 @@ class Filter implements Query<Country> {
   }
   execute(data: Country[]): Country[] {
     return data.filter(
-      (c) => c.code.includes(this.filterQuery) || c.country.includes(this.filterQuery)
+      (c) =>
+        c.code.includes(this.filterQuery) ||
+        c.country.includes(this.filterQuery)
     );
   }
   validate(): void {
@@ -19,4 +21,4 @@ class Filter implements Query<Country> {
   }
 }
 
-export default Filter
+export default Filter;

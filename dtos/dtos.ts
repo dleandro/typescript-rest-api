@@ -15,9 +15,4 @@ type JSONBinResponse = {
   record: Country[];
 };
 
-
-export {
-    Metadata,
-    Country,
-    JSONBinResponse
-}
+export { Metadata, Country, JSONBinResponse };

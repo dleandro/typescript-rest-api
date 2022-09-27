@@ -24,19 +24,19 @@ const setupFilter = (query: any) => {
   if (query.filter) {
     const filter = new Filter(query.filter);
     filter.validate();
-    return filter
+    return filter;
   }
-  return undefined
+  return undefined;
 };
 
 const setupOrder = (query: any) => {
-    if (query.order) {
-        const order = new Order(query.order);
-        order.validate();
-        return order
-    }
-    return undefined;
-}
+  if (query.order) {
+    const order = new Order(query.order);
+    order.validate();
+    return order;
+  }
+  return undefined;
+};
 
 const fetchJSONbinData = async () => {
   const { data } = await axios.get<JSONBinResponse>(
@@ -52,4 +52,3 @@ const fetchJSONbinData = async () => {
 };
 
 export { jsonbinServiceUseCase };
-

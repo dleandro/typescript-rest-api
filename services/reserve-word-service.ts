@@ -10,7 +10,7 @@ const reverseWordUseCase = (wordToReverse: string) => {
     }
   }
 
-  return result
+  return result;
 };
 
 const isVowel = (c: string) => {

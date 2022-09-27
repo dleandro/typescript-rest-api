@@ -3,7 +3,7 @@ import { Country } from '../dtos/dtos';
 
 class Order implements Query<Country> {
   orderQuery: string;
-  possibleOrderQueries = ["asc", "desc"]
+  possibleOrderQueries = ['asc', 'desc'];
   constructor(orderQuery: string) {
     this.orderQuery = orderQuery;
   }
